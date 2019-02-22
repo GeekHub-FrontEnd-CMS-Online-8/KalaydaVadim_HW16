@@ -1,0 +1,330 @@
+@-webkit-keyframes shake {
+  from,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(1px, 0, 0);
+    transform: translate3d(1px, 0, 0);
+  }
+}
+
+@keyframes shake {
+  from,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(1px, 0, 0);
+    transform: translate3d(1px, 0, 0);
+  }
+}
+
+.shake {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+}
+
+.footer {
+    height: 800px;
+    width: 100%;
+}
+
+.footer__container {
+    width: 70%;
+    height: 700;
+    margin: auto;
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer__top__left {
+    width: 360px;
+    height: 360px;
+    background: url("../img/footer-left-bg.png");
+    margin-left: 50px;
+}
+
+.footer__top__left__top {
+    width: 100%;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.footer__top__left__top-headline {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 14px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 55px;
+}
+
+.footer__top__left__top-date {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 14px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 25px;
+}
+
+.footer__top__left__top-time {
+    color: #909090;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.footer__top__left__bottom {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__top__left__bottom-btn {
+    width: 67px;
+    height: 67px;
+    background: #c3a000;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.footer__top__left__bottom-btn.shake:hover  {
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: shake;
+    animation-name: shake;
+}
+
+.footer__top__center {
+    width: 360px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 75px;
+}
+
+.footer__top__center-headline {
+    width: 165px;
+    color: #362f2f;
+    font-size: 16px;
+    line-height: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    border-bottom: 1px solid #c3a000;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+.footer__top__center__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer__top__center__content__row {
+    display: flex;
+}
+
+.footer__top__center__content__row-photo {
+    width: 67px;
+    height: 67px;
+}
+
+.footer__top__center__content__row__text {
+    margin-left: 15px;
+}
+
+.footer__top__center__content__row__text-headline {
+    color: #362f2f;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-top: 0;
+}
+
+.footer__top__center__content__row__text-date {
+    color: #7a7a7a;
+    font-size: 11px;
+    line-height: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    margin-top: -10px;
+}
+
+.footer__top__center__content__row__text-about {
+    width: 280px;
+    color: #362f2f;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1.2px;
+    margin-top: -10px;
+}
+
+.footer__top__center__content__row__text-about-link {
+    color: #c3a000;
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer__top__right {
+    width: 360px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 75px;
+}
+
+.footer__top__right-headline {
+    width: 165px;
+    color: #362f2f;
+    font-size: 16px;
+    line-height: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    border-bottom: 1px solid #c3a000;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+.footer__top__right__categorys {
+    list-style: square;
+}
+
+.footer__top__right__categorys-list {
+    margin-top: 5px;
+}
+
+.footer__sponcors {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer__sponcors-sponcor {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.footer__bottom {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer__bottom-text1 {
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    width: 215px;
+}
+
+.footer__bottom-copyright {
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+@media (min-width: 460px) and (max-width: 1143px) {
+    .footer {
+        height: 1620px;
+    }
+    .footer__top__center {
+        margin-top: 50px;
+    }
+    
+    .footer__top__right {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 1144px) and (max-width: 1829px) {
+    .footer {
+        height: 1200px;
+    }
+    
+    .footer__top__right {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 460px) and (max-width: 1206px) {
+    .footer__top__center {
+        margin-left: 0;
+    }
+    .footer__top__right {
+        margin-left: 0;
+    }
+}

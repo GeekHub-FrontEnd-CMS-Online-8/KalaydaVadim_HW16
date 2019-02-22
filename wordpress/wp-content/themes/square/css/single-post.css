@@ -1,0 +1,337 @@
+.post {
+    width: 100%;
+    height: 2370px;
+}
+
+.post__container {
+    width: 88.7%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post-headline {
+    color: #333333;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+    max-width: 704px;
+}
+
+.post__soc {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post__soc-text {
+    color: #000;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 20px;
+    font-weight: 700;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.post__text-text {
+    color: #000;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22.4px;
+    max-width: 716px;
+}
+
+.post__text-text span {
+    font-weight: bold;
+}
+
+.post__share {
+    width: 750px;
+    height: 70px;
+    background: #f8f8f8;
+}
+
+.post__share__container {
+    width: 92%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.post__share__left {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.post__share__left-share {
+    color: #333333;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 22.4px;
+    text-transform: uppercase;
+}
+
+.post__share__left-link {
+    color: #333;
+    margin-left: 35px;
+}
+
+.post__share__right {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.post__share__right-link {
+    color: #444;
+    margin-right: 20px;
+}
+
+.post__comments {
+    width: 740px;
+    min-height: 470px;
+}
+
+.post__comments__container {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.post__comments-much {
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20.8px;
+}
+
+.post__comments__comment {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.post__comments__comment__reply {
+    margin-left: 20px;
+}
+
+.post__comments__comment__about {
+    width: 100%;
+    display: flex;
+}
+
+.post__comments__comment__about__left {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.post__comments__comment__about__left-name {
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+}
+
+.post__comments__comment__about__left-date {
+    color: #7f8c8c;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20.8px;
+    margin-left: 25px;
+}
+
+.post__comments__comment__about__right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.post__comments__comment__about__right-reply {
+    color: #333;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20.8px;
+    text-transform: uppercase;
+}
+
+.post__comments__comment__content {
+    display: flex;
+    background: #e6e6e6;
+    min-height: 70px;
+    justify-content: flex-start;
+}
+
+.post__comments__comment__content-text {
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.4px;
+    margin-left: 15px;
+}
+
+.post__bottom {
+    width: 740px;
+    min-height: 470px;
+    margin-top: 30px;
+}
+
+.post__bottom__container {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.post__bottom-headline {
+    color: #333;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20.8px;
+}
+
+.post__bottom__form {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.post__bottom__form__top-inputs {
+    display: flex;
+    justify-content: space-around;
+}
+
+.post__bottom__form__top-inputs-input {
+    width: 331px;
+    height: 40px;
+    border: 1px solid #000;
+    color: #aaa;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20.8px;
+    padding-left: 17px;
+}
+
+.post__bottom__form__middle-inputs {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.post__bottom__form__middle-inputs-input {
+    width: 331px;
+    height: 40px;
+    border: 1px solid #000;
+    color: #aaa;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20.8px;
+    padding-left: 17px;
+}
+
+.post__bottom__form__bottom-inputs {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+
+.post__bottom__form__bottom-inputs-textarea {
+    width: 490px;
+    height: 187px;
+    border: 1px solid #000;
+    color: #aaa;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20.8px;
+    padding-left: 17px;
+    resize: none;
+    padding-top: 10px;
+}
+
+.post__bottom__form__bottom-inputs-send {
+    width: 170px;
+    height: 35px;
+    background: #333;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16.8px;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.post__bottom-text-under-form {
+    color: #333;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.8px;
+}
+
+@media (min-width: 460px) and (max-width: 752px) {
+    .post {
+        height: 2650px;
+    }
+    .post__share {
+        width: 100%;
+    }
+    .post__comments {
+        width: 100%;
+    }
+    .post__bottom {
+        width: 100%;
+    }
+    .post__bottom__form__top-inputs {
+        flex-direction: column;
+        align-items: center;
+    }
+    .post__bottom__form__middle-inputs {
+        flex-direction: column;
+        align-items: center;
+    }
+    .post__bottom__form__bottom-inputs {
+        flex-direction: column;
+        align-items: center;
+    }
+    .post__bottom__form__top-inputs-input {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .post__bottom__form__middle-inputs-input {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .post__bottom__form__bottom-inputs-textarea {
+        width: 100%;
+    }
+    .post__bottom__form__bottom-inputs-send {
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 460px) and (max-width: 579px) {
+    .post {
+        height: 2850px;
+    }
+}

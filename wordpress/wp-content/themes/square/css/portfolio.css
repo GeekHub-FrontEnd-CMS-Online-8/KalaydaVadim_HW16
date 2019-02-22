@@ -1,0 +1,128 @@
+.main {
+    width: 100%;
+    height: 1270px;
+}
+
+.main__container {
+    width: 88.7%;
+    height: 100%;
+    margin: auto;
+}
+
+.main__container__gallery {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main__container__gallery__block {
+    width: 380px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main__container__gallery__block-headline {
+    color: #362f2f;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+}
+
+.main__container__gallery__block-under-headline {
+    color: #362f2f;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    margin-top: -5px;
+}
+
+.main__container__gallery-image {
+    position: relative;
+    transition: .3s;
+}
+
+.main__container__gallery-image-photo {
+    position: relative;
+}
+
+.main__container__gallery-image-box {
+    width: 250px;
+    height: 250px;
+    background: rgba(255, 255, 255, .7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 65px;
+    left: 65px;
+    opacity: 0;
+    transition: .3s;
+}
+
+.main__container__gallery-image-box:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.middle {
+    width: 100%;
+    height: 150px;
+}
+
+.middle__container {
+    width: 88.7%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.middle-up-btn {
+    width: 50px;
+    height: 50px;
+    background: #362f2f;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media (min-width: 460px) and (max-width: 856px) {
+    .main {
+        height: 3470px;
+    }
+}
+
+@media (min-width: 857px) and (max-width: 1286px) {
+    .main {
+        height: 2070px;
+    }
+}
+
+@media (min-width: 1714px) and (max-width: 1789px) {
+    .main__container {
+        width: 85%;
+    }
+}
+
+@media (min-width: 1790px) and (max-width: 2026px) {
+    .main__container {
+        width: 75%;
+    }
+}
+
+@media (min-width: 2027px) and (max-width: 2160px) {
+    .main__container {
+        width: 70%;
+    }
+}

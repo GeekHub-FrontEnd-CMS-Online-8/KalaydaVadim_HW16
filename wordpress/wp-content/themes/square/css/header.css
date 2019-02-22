@@ -1,0 +1,160 @@
+.header {
+    width: 100%;
+    min-height: 8%;
+}
+
+.header__container {
+    width: 87.8%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.header__left {
+    width: 40%;
+    display: flex;
+    position: relative;
+}
+
+.header__left-toggle-btn {
+    width: 50px;
+    height: 50px;
+    background-color: #362f2f;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: .3s;
+}
+.active-btn {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #362f2f;
+    color: #362f2f;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.header__left__nav {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    top: -55px;
+    left: 35px;
+    transition: .3s;
+    flex-wrap: wrap;
+}
+
+.header__left__nav.active {
+    top: 10px;
+}
+
+.header__left__nav-list {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.header__left__nav-list a {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #362f2f;
+    letter-spacing: 1.2px;
+    font-weight: bold;
+}
+
+.header__left__nav-list a:hover {
+    border-bottom: 1px solid #f3c90c;
+}
+
+.header__center {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.header-logo-link {
+    position: absolute;
+    z-index: 1;
+}
+
+.header__right {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header__right a {
+    color: #312B2B;
+}
+
+.header__right__soc-logo {
+    margin-top: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+@media (min-width: 665px) and (max-width: 893px) {
+    .header {
+        min-height: 90px;
+    }
+    .header__left__nav {
+        top: -70px;
+    }
+}
+
+@media (min-width: 581px) and (max-width: 664px) {
+    .header {
+        min-height: 110px;
+    }
+    .header__left__nav {
+        top: -90px;
+    }
+}
+
+@media (min-width: 537px) and (max-width: 580px) {
+    .header {
+        min-height: 110px;
+    }
+    .header__left__nav {
+        top: -110px;
+    }
+}
+
+@media (min-width: 460px) and (max-width: 537px) {
+    .header {
+        min-height: 130px;
+    }
+    .header__left__nav {
+        top: -150px;
+    }
+}
+
+@media (min-width: 460px) and (max-width: 600px) {
+    .header__right__soc-logo {
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    .header__left__nav-list {
+        margin-right: 3px;
+        margin-left: 3px;
+    }
+
+}
+
+@media (min-width: 460px) and (max-width: 555px) {
+    .header {
+        min-height: 140px;
+    }
+}
+

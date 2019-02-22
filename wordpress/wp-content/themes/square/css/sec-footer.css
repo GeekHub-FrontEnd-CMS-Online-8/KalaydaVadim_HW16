@@ -1,0 +1,30 @@
+.footer {
+    height: 300px;
+    width: 100%;
+}
+
+.footer__container {
+    width: 88.7%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-text1 {
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    width: 215px;
+}
+
+.footer-copyright {
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+}
