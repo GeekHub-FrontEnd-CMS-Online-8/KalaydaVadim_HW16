@@ -1,1 +1,1 @@
-KalaydaVadimHW16     -     NOT READY!
+KalaydaVadimHW16 - READY

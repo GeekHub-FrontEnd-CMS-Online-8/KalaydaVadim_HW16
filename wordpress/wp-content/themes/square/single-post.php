@@ -90,10 +90,10 @@
                         </div>
                         <p class="post__comments-much"><?php comments_number(0, 1, '%'); ?> Comments</p>
                         <div class="post__comments__comment">
-                           <?php 
+                           <?php
                                 // The Query
                                 $comments_query = new WP_Comment_Query;
-                                $comments = $comments_query->query( $args );
+                                $comments = $comments_query->query($args);
 
                                 // Comment Loop
                                 if ( $comments ) {
@@ -116,7 +116,7 @@
                                 </div>
                             </div>
                             <div class="post__comments__comment__content">
-                                <?php 
+                                <?php
                                 $size = 80;
                                 echo get_avatar( $id_or_email, $size, $default, $alt, $args ); ?>
                                 <p class="post__comments__comment__content-text">
