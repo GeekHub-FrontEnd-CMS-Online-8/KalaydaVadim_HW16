@@ -42,7 +42,7 @@
                 </div>
                 <div class="footer__top__right">
                     <div class="footer__top__right__top">
-                        <a href="home.php" class="footer__top__right__top-black-logo"><img src="<?php echo SQ_IMG_DIR;?>/black-logo.png" alt="Black Logo"></a>
+                        <a href="<?php echo home_url(); ?>" class="footer__top__right__top-black-logo"><img src="<?php echo SQ_IMG_DIR;?>/black-logo.png" alt="Black Logo"></a>
                         <div class="footer__top__right__top__right">
                             <div class="footer__top__right__top__right__row">
                                 <i class="fa fa-phone-square footer__top__right__top__right__row-icon footer__top__right__top__right__row-icon-number" aria-hidden="true"></i>
@@ -56,7 +56,7 @@
                                 <a href="https://www.facebook.com" class="footer__top__right__top__right__row-soc-logo"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                 <a href="https://twitter.com" class="footer__top__right__top__right__row-soc-logo"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                                 <a href="https://www.instagram.com" class="footer__top__right__top__right__row-soc-logo"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                <a href="home.php" class="footer__top__right__top__right__row-soc-logo"><img src="<?php echo SQ_IMG_DIR;?>/soc-icon.png" alt="Soc Icon"></a>
+                                <a href="#" class="footer__top__right__top__right__row-soc-logo"><img src="<?php echo SQ_IMG_DIR;?>/soc-icon.png" alt="Soc Icon"></a>
                                 <a href="https://plus.google.com/discover" class="footer__top__right__top__right__row-soc-logo"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
                             </div>
                         </div>

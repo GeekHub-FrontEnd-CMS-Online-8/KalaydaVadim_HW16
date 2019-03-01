@@ -250,12 +250,16 @@
     padding-left: 10px;
 }
 
-.footer__top__right__categorys {
+.post-categories {
     list-style: square;
 }
 
-.footer__top__right__categorys-list {
+.post-categories li {
     margin-top: 5px;
+}
+
+.post-categories li a{
+    color: #362f2f;
 }
 
 .footer__sponcors {
