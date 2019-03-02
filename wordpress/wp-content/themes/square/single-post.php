@@ -135,7 +135,7 @@
                 <div class="post__bottom">
                     <div class="post__bottom__container">
                         <h2 class="post__bottom-headline">Leave a comment</h2>
-                        <?php echo do_shortcode('[contact-form-7 id="123" title="Post form"]'); ?>
+                        <?php echo do_shortcode('[contact-form-7 id="24" title="Post form"]'); ?>
                         <p class="post__bottom-text-under-form">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mattis semper nisl, vitae malesuada massa egestas a. Vestibulum vestibulum urna sapien, eu bibendum magna ornare non.</p>
                     </div>
                 </div>

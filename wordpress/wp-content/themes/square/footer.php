@@ -19,7 +19,7 @@
                             <div class="footer__top__center__content__row__text">
                                 <p class="footer__top__center__content__row__text-headline">New Gallery Set</p>
                                 <p class="footer__top__center__content__row__text-date">09.12.2014</p>
-                                <p class="footer__top__center__content__row__text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla mi orci, ac venenatis ante venenatis eget. <a href="home.php" class="footer__top__center__content__row__text-about-link"> read more</a></p>
+                                <p class="footer__top__center__content__row__text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla mi orci, ac venenatis ante venenatis eget. <a href="#" class="footer__top__center__content__row__text-about-link"> read more</a></p>
                             </div>
                         </div>
                         <div class="footer__top__center__content__row">
@@ -27,7 +27,7 @@
                             <div class="footer__top__center__content__row__text">
                                 <p class="footer__top__center__content__row__text-headline">wedding workshop</p>
                                 <p class="footer__top__center__content__row__text-date">09.12.2014</p>
-                                <p class="footer__top__center__content__row__text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla mi orci, ac venenatis ante venenatis eget. <a href="home.php" class="footer__top__center__content__row__text-about-link"> read more</a></p>
+                                <p class="footer__top__center__content__row__text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla mi orci, ac venenatis ante venenatis eget. <a href="#" class="footer__top__center__content__row__text-about-link"> read more</a></p>
                             </div>
                         </div>
                         <div class="footer__top__center__content__row">
@@ -35,7 +35,7 @@
                             <div class="footer__top__center__content__row__text">
                                 <p class="footer__top__center__content__row__text-headline">Personal Project</p>
                                 <p class="footer__top__center__content__row__text-date">09.12.2014</p>
-                                <p class="footer__top__center__content__row__text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla mi orci, ac venenatis ante venenatis eget. <a href="home.php" class="footer__top__center__content__row__text-about-link"> read more</a></p>
+                                <p class="footer__top__center__content__row__text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla mi orci, ac venenatis ante venenatis eget. <a href="#" class="footer__top__center__content__row__text-about-link"> read more</a></p>
                             </div>
                         </div>
                     </div>

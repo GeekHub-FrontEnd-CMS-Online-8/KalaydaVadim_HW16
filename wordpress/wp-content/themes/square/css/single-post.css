@@ -104,18 +104,14 @@
     margin-right: 20px;
 }
 
-#disqus_thread {
-    width: 50%;
-}
 
 .post__comments {
     width: 740px;
-    min-height: 470px;
 }
 
 .commentlist {
     width: 100%;
-    min-height: 100%;
+    height: 100%;
 }
 
 .commentlist textarea {
@@ -147,7 +143,6 @@
 
 .post__comments__container {
     width: 100%;
-    min-height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -233,13 +228,13 @@
 
 .post__bottom {
     width: 100%;
-    min-height: 470px;
+    height: 470px;
     margin-top: 30px;
 }
 
 .post__bottom__container {
     width: 740px;
-    min-height: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -254,9 +249,8 @@
     line-height: 20.8px;
 }
 
-.post__bottom__form {
+.post__bottom form {
     width: 100%;
-    min-height: 100%;
     display: flex;
     flex-direction: column;
 }

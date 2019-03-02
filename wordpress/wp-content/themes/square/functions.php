@@ -63,6 +63,8 @@
     add_action( 'init', 'create_post_type_sq_carousel' );
 
 
+
+
  
     add_filter("the_content", "plugin_myContentFilter");
 
@@ -70,3 +72,19 @@
     { 
         return mb_substr($content, 0, 120);
     }
+
+    function create_post_type_sq_gallery() {
+          register_post_type( 'sq_gallery-photo',
+            array(
+              'labels' => array(
+                'name' => __( 'Gallery Photo' ),
+                'singular_name' => __( 'Gallery Photo' ),
+              ),
+              'public' => true,
+              'menu_icon'     => 'dashicons-format-gallery',
+              'has_archive' => true,
+              'supports'           => array('title','thumbnail')
+            )
+          );
+        }
+    add_action( 'init', 'create_post_type_sq_gallery' );

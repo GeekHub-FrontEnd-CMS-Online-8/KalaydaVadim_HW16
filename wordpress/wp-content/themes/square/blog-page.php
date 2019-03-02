@@ -62,7 +62,7 @@
                     <h2 class="blogs__post__top-headline"><?php the_title(); ?></h2>
                     <div class="blogs__post__top-text"><?php the_excerpt(); ?></div>
                     <div class="blogs__posts__top__bottom">
-                        <button class="blogs__post__top__bottom-btn"><a href="<?php the_permalink(); ?>">Read More</a></button>
+                        <a class="blogs__post__top__bottom-btn" href="<?php the_permalink(); ?>">Read More</a>
                     </div>
                     <div class="blogs__posts__top__under__bottom">
                         <p class="blogs__posts__top__under__bottom-left-date"><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time('d/m/Y'); ?></p>

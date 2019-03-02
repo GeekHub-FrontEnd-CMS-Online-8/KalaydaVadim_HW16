@@ -67,18 +67,16 @@
     width: 180px;
     height: 30px;
     background: #c3a000;
+    color: #fff;
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
-    display: flex;
-    align-content: center;
-    justify-content: center;
+    text-align: center;
     border: none;
     cursor: pointer;
-}
-
-.blogs__post__top__bottom-btn a {
-    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .blogs__posts__top__under__bottom {

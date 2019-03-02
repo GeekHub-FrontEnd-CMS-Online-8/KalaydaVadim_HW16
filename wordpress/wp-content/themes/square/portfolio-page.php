@@ -34,44 +34,62 @@
         <div class="main__container">
             <div class="main__container__gallery">
                 <div class="main__container__gallery__block">
-                    <h2 class="main__container__gallery__block-headline">Portfolio</h2>
-                    <p class="main__container__gallery__block-under-headline">gallery three</p>
+                    <h2 class="main__container__gallery__block-headline"><?php the_title(); ?></h2>
+                    <p class="main__container__gallery__block-under-headline">Gallery</p>
                 </div>
+                <?php 
+                    $args = array(
+                    'post_type'      => 'sq_gallery-photo',
+                    'posts_per_page' => '8',
+                    'paged'          => get_query_var('paged')?: 1
+                    );
+
+                    $query = new WP_Query($args);
+
+                    if($query->have_posts()) {
+                        while($query->have_posts()) {
+                            $query->the_post();
+                        
+                ?>
                 <div class="main__container__gallery-image">
-                    <img src="<?php echo SQ_IMG_DIR;?>/gallery-photo1.png" alt="Photo 1" class="main__container__gallery-image-photo">
+                    <?php if(has_post_thumbnail()) { 
+                        echo the_post_thumbnail(get_the_ID(), array('class' => 'main__container__gallery-image-photo'));
+                    }else {
+                        echo '<img src="'.SQ_IMG_DIR.'/dae6d405-af3c-4e0d-b961-d49795a88ec1_1.f0276d14656e2f9f78bc6f315f649c18.jpeg">';
+                    }; ?>
                     <div class="main__container__gallery-image-box"><img src="<?php echo SQ_IMG_DIR;?>/scope.png" alt="Scope"></div>
                 </div>
-                <div class="main__container__gallery-image">
-                    <img src="<?php echo SQ_IMG_DIR;?>/gallery-photo2.png" alt="Photo 2" class="main__container__gallery-image-photo">
-                    <div class="main__container__gallery-image-box"><img src="<?php echo SQ_IMG_DIR;?>/scope.png" alt="Scope"></div>
-                </div>
-                <div class="main__container__gallery-image">
-                    <img src="<?php echo SQ_IMG_DIR;?>/gallery-photo3.png" alt="Photo 3" class="main__container__gallery-image-photo">
-                    <div class="main__container__gallery-image-box"><img src="<?php echo SQ_IMG_DIR;?>/scope.png" alt="Scope"></div>
-                </div>
-                <div class="main__container__gallery-image">
-                    <img src="<?php echo SQ_IMG_DIR;?>/gallery-photo4.png" alt="Photo 4" class="main__container__gallery-image-photo">
-                    <div class="main__container__gallery-image-box"><img src="<?php echo SQ_IMG_DIR;?>/scope.png" alt="Scope"></div>
-                </div>
-                <div class="main__container__gallery-image">
-                    <img src="<?php echo SQ_IMG_DIR;?>/gallery-photo5.png" alt="Photo 5" class="main__container__gallery-image-photo">
-                    <div class="main__container__gallery-image-box"><img src="<?php echo SQ_IMG_DIR;?>/scope.png" alt="Scope"></div>
-                </div>
-                <div class="main__container__gallery-image">
-                    <img src="<?php echo SQ_IMG_DIR;?>/gallery-photo6.png" alt="Photo 6" class="main__container__gallery-image-photo">
-                    <div class="main__container__gallery-image-box"><img src="<?php echo SQ_IMG_DIR;?>/scope.png" alt="Scope"></div>
-                </div>
-                <div class="main__container__gallery-image">
-                    <img src="<?php echo SQ_IMG_DIR;?>/gallery-photo7.png" alt="Photo 7" class="main__container__gallery-image-photo">
-                    <div class="main__container__gallery-image-box"><img src="<?php echo SQ_IMG_DIR;?>/scope.png" alt="Scope"></div>
-                </div>
-                <div class="main__container__gallery-image">
-                    <img src="<?php echo SQ_IMG_DIR;?>/gallery-photo8.png" alt="Photo 8" class="main__container__gallery-image-photo">
-                    <div class="main__container__gallery-image-box"><img src="<?php echo SQ_IMG_DIR;?>/scope.png" alt="Scope"></div>
-                </div>
+                <?php
+                        }
+                    }else {}
+            
+                    wp_reset_postdata();
+                ?>
             </div>
         </div>
     </main>
+    
+    <div class="pagination">
+        <div class="pagination__container">
+            <?php 
+        echo paginate_links( array(
+            'base'         => str_replace( 999999999, '%#%', esc_url( get_pagenum_link( 999999999 ) ) ),
+            'total'        => $query->max_num_pages,
+            'current'      => max( 1, get_query_var( 'paged' ) ),
+            'format'       => '?paged=%#%',
+            'show_all'     => false,
+            'type'         => 'plain',
+            'end_size'     => 2,
+            'mid_size'     => 1,
+            'prev_next'    => true,
+            'prev_text'    => sprintf( '<i></i> %1$s', __( 'PREV', 'text-domain' ) ),
+            'next_text'    => sprintf( '%1$s <i></i>', __( 'NEXT', 'text-domain' ) ),
+            'add_args'     => false,
+            'add_fragment' => '',
+        ) );
+    ?>
+        </div>
+    </div>
     
     <div class="middle">
         <div class="middle__container">
